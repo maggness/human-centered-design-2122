@@ -1,12 +1,215 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ba8557;
+    font-size: 1em;
+}
+
+*:focus {
+    outline: none;
 }
 
 body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+    background-color: #282828;
+    counter-reset: vim; 
+    overflow: hidden;
+}
+
+.vimContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    counter-reset: vim2; 
+}
+
+#vim0 {
+    width: 50%;
+    height: 100vh;
+    background-image: linear-gradient(#ba8557 46%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 1px 5px;
+    background-repeat: repeat-y
+}
+
+#vim0 li {
+    display: flex;
+    flex-direction: row;
+}
+
+#vim0 li:focus {
+    background-color: #3c3836;
+    outline: none;
+}
+
+#vim0 li::before {
+    counter-increment: vim;
+    content: counter(vim) " ";
+    margin: 0 .7% 0 0;
+}
+
+#vim0 li:nth-child(-n+9)::before {
+    counter-increment: vim;
+    content: "0" counter(vim) " ";
+}
+
+#vim0 li input {
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+#vim0 li input:focus {
+    background-color: #3c3836;
+    outline: none;
+}
+
+#vim1 {
+    width: 50%;
+    height: 100vh;
+    margin: 0 0 0 .5%;
+}
+
+#vim1 li {
+    display: flex;
+    flex-direction: row;
+}
+
+#vim1 li:focus {
+    background-color: #3c3836;
+    outline: none;
+}
+
+#vim1 li::before {
+    counter-increment: vim2;
+    content: counter(vim2) " ";
+    margin: 0 .7% 0 0;
+}
+
+#vim1 li:nth-child(-n+9)::before {
+    counter-increment: vim2;
+    content: "0" counter(vim2) " ";
+}
+
+#vim1 li input {
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+#vim1 li input:focus {
+    background-color: #3c3836;
+    outline: none;
+}
+
+.swag li input:focus {
+    background-color: #ba8557 !important;
+    color: #282828;
+}
+
+.uiBoven {
+    background-color: #3c3836;
+    width: 100vw;
+    height: 1.5em;
+}
+
+.uiOnder {
+    position: absolute;
+    bottom: 0;
+    background-color: #3c3836;
+    color: #3c3836;
+    width: 100vw;
+    height: 1.5em;
+}
+
+.inmode {
+    color: #ba8557;
+}
+
+/* img {
+    display: none;
+} */
+
+/* div {
+    width: 7em;
+    height: 3em;
+    background-color: gray;
+    top: var(--topcalc);
+    left: var(--leftcalc);
+    transition: 1s;
+    position: absolute;
+}
+
+div:nth-of-type(1) {
+    --left: 3;
+    --top: 10;
+    --leftcalc: calc(var(--left) * 1vw);
+    --topcalc: calc(var(--top) * 1vh);
+}
+
+div:nth-of-type(2) {
+    --left: 3;
+    --top: 20;
+    --leftcalc: calc(var(--left) * 1vw);
+    --topcalc: calc(var(--top) * 1vh);
+}
+
+div:nth-of-type(3) {
+    --left: 3;
+    --top: 30;
+    --leftcalc: calc(var(--left) * 1vw);
+    --topcalc: calc(var(--top) * 1vh);
+
+}
+
+div:nth-of-type(4) {
+    --left: 3;
+    --top: 40;
+    --leftcalc: calc(var(--left) * 1vw);
+    --topcalc: calc(var(--top) * 1vh);
+}
+
+div:nth-of-type(5) {
+    --left: 3;
+    --top: 50;
+    --leftcalc: calc(var(--left) * 1vw);
+    --topcalc: calc(var(--top) * 1vh);
+
+}
+
+div:nth-of-type(6) {
+    --left: 3;
+    --top: 60;
+    --leftcalc: calc(var(--left) * 1vw);
+    --topcalc: calc(var(--top) * 1vh);
+}
+
+div:focus {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+div::after {
+    content: 'Trein naar Amsterdam';
+}
+
+#fastdragmsg {
+    width: 13vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 3vw 3vh;
+    background-color: white;
+    padding: 1vw 1vh;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .fun div {
@@ -101,85 +304,4 @@ body {
 
 .fun div::after {
     content: '';
-}
-
-img {
-    display: none;
-}
-
-div {
-    width: 7em;
-    height: 3em;
-    background-color: gray;
-    top: var(--topcalc);
-    left: var(--leftcalc);
-    transition: 1s;
-    position: absolute;
-}
-
-div:nth-of-type(1) {
-    --left: 3;
-    --top: 10;
-    --leftcalc: calc(var(--left) * 1vw);
-    --topcalc: calc(var(--top) * 1vh);
-}
-
-div:nth-of-type(2) {
-    --left: 3;
-    --top: 20;
-    --leftcalc: calc(var(--left) * 1vw);
-    --topcalc: calc(var(--top) * 1vh);
-}
-
-div:nth-of-type(3) {
-    --left: 3;
-    --top: 30;
-    --leftcalc: calc(var(--left) * 1vw);
-    --topcalc: calc(var(--top) * 1vh);
-
-}
-
-div:nth-of-type(4) {
-    --left: 3;
-    --top: 40;
-    --leftcalc: calc(var(--left) * 1vw);
-    --topcalc: calc(var(--top) * 1vh);
-}
-
-div:nth-of-type(5) {
-    --left: 3;
-    --top: 50;
-    --leftcalc: calc(var(--left) * 1vw);
-    --topcalc: calc(var(--top) * 1vh);
-
-}
-
-div:nth-of-type(6) {
-    --left: 3;
-    --top: 60;
-    --leftcalc: calc(var(--left) * 1vw);
-    --topcalc: calc(var(--top) * 1vh);
-}
-
-div:focus {
-    transform: scale(1.1);
-    transition: 0s;
-}
-
-div::after {
-    content: 'Trein naar Amsterdam';
-}
-
-#fastdragmsg {
-    width: 13vw;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 3vw 3vh;
-    background-color: white;
-    padding: 1vw 1vh;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
+} */
