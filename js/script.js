@@ -140,13 +140,15 @@ document.addEventListener("keydown", (event) => {
   //Als je kan typen
   if (insertMode == 0) {
     if (event.keyCode === 13) {
-      if (!cmdTextitem.value == 0) {
         cmdTextitem.outerHTML = document.activeElement.value
-      }
   
-      textInsert.appendChild(Object.assign(document.createElement('li'), { innerHTML: '<input type="text" cmdText'+schermkant+' tabindex="2">' }))
-      cmdTextitem = document.querySelector('[cmdText'+schermkant+']')
-      cmdTextitem.focus()
+      if (cmdTextitem.value === ':ter') {
+        textInsert.appendChild(Object.assign(document.createElement('li'), { innerHTML: '<div class="prompt">Work in progress...</div>' }))
+      } else {
+          textInsert.appendChild(Object.assign(document.createElement('li'), { innerHTML: '<input type="text" cmdText'+schermkant+' tabindex="2">' }))
+          cmdTextitem = document.querySelector('[cmdText'+schermkant+']')
+          cmdTextitem.focus()
+      }
     }
   }
 });

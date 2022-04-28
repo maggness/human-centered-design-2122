@@ -132,6 +132,16 @@ body {
     color: #ba8557;
 }
 
+.prompt {
+    width: 50em;
+    height: 30em;
+    position: fixed;
+    background: black;
+    left: 10em;
+    padding: 2%;
+    color: white;
+}
+
 /* img {
     display: none;
 } */
