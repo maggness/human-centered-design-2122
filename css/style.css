@@ -108,15 +108,25 @@ body {
     outline: none;
 }
 
+.swag li:focus {
+    background-color: #ba8557 !important;
+    color: #282828 !important;
+}
+
 .swag li input:focus {
     background-color: #ba8557 !important;
-    color: #282828;
+    color: #282828 !important;
 }
 
 .uiBoven {
     background-color: #3c3836;
     width: 100vw;
     height: 1.5em;
+}
+
+.invis {
+    height: 0em !important;
+    color: #3c3836;
 }
 
 .uiOnder {
@@ -126,10 +136,21 @@ body {
     color: #3c3836;
     width: 100vw;
     height: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uiOnder p {
+    color: #ba8557;
+}
+
+.uiOnder p:last-of-type {
+    padding-right: 1%;
 }
 
 .inmode {
-    color: #ba8557;
+    color: #3c3836 !important; 
 }
 
 .prompt {
