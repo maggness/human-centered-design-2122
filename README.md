@@ -76,9 +76,14 @@ Ik heb nu de commands: Y (yank), D (delete words on row), DD (delete row) & P (p
 - Ik wil graag weten of dit fijn werkt en of hij nog iets mist waar ik niet vanaf weet.
 
 ### Testresultaten
+De website is heel buggy dus het is Marijn niet gelukt om te copy & paste. Dit kan komen omdat ik VIM probeer na te maken maar hier zelf niet heel veel van weet. Misschien is het toch niet heel handig om iets te maken waar ik dan niet zoveel van weet maar Marijn bijvoorbeeld wel, zo raakt marijn in de war waarom iets het niet zou doen zoals het werkt op het ding waar ik het op baseer.
 
+Er mis een indicator van het woord dat je geyanked heb.
+
+Selecteren met de muis werkt niet, de focus van de muis moet ook gepakt kunnen worden.
 
 ### Persoonlijk:
+- Marijn zijn lievelings kleur is paars
 
 ## Design Principles 
 We moesten een paar design principles in ons hoofd houden tijdens het maken van deze website, hieronder beschrijf ik per principe hoe ik erop heb gelet.
@@ -119,6 +124,10 @@ Dit project is voorzien van een MIT licence. Zie de pagina LICENCE voor meer inf
 Lessen & leraren
 
 W3 Schools
+
+https://www.vim.org/
+
+https://vim.rtorr.com/
 
 
 
