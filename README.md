@@ -7,7 +7,7 @@ Voor human centered design maar ik een website specifiek voor een persoon, Marij
 ## De applicatie
 Hij is te vinden via deze link: https://maggness.github.io/human-centered-design-2122/.
 
-(foto)
+![image](https://user-images.githubusercontent.com/30145681/168112871-48de49d1-2008-4cb3-8120-67dd4b02f82d.png)
 
 ## Marijn Meijles
 
