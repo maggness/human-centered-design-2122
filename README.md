@@ -9,12 +9,12 @@ Hij is te vinden via deze link: https://maggness.github.io/human-centered-design
 
 ![image](https://user-images.githubusercontent.com/30145681/168112871-48de49d1-2008-4cb3-8120-67dd4b02f82d.png)
 
-## Marijn Meijles
-
 ### Opdracht voor Marijn
 Hoe kun je een drag & drop lijst optimaliseren voor een gebruiker die afhankelijk is van zijn toetsenbord én motorisch gestoord is?
 
-###  Marijn is bekend met computers en ook met VIM, dit heeft hij tijdens een test verteld. Hij vindt bier drinken leuk (topper) en kan genieten allerlei soorten muziek zoals bijvoorbeeld metal, jazz, klassiek, techno. Hij heeft een beperking en daarom kan hij niet lopen en rijd hij rond in een scootmobiel (waarmee hij ook kan driften). Door deze beperking heeft hij minder controle over zijn handen waardoor het lastiger is om de laptop te gebruiken.
+## Marijn Meijles
+
+Marijn is bekend met computers en ook met VIM, dit heeft hij tijdens een test verteld. Hij vindt bier drinken leuk (topper) en kan genieten allerlei soorten muziek zoals bijvoorbeeld metal, jazz, klassiek, techno. Hij heeft een beperking en daarom kan hij niet lopen en rijd hij rond in een scootmobiel (waarmee hij ook kan driften). Door deze beperking heeft hij minder controle over zijn handen waardoor het lastiger is om de laptop te gebruiken.
 
 ### Wat wilt Marijn bereiken?
 Hij wilt een drag en drop kunnen gebruiken om zijn agenda data makkelijk te kunnen verplaatsen.
